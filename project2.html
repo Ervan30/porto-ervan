@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Energy Monitor - Ervan Darmawan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #721e1e, #982a2a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .custom-gradient {
+            background: linear-gradient(to right, #721e1e, #982a2a);
+        }
+        
+        .btn-back {
+            background: linear-gradient(to right, #721e1e, #982a2a);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-back:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(114, 30, 30, 0.3);
+        }
+
+        .footer {
+            background: linear-gradient(to right, #511818, #982a2a);   
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #721e1e;
+        }
+        
+        .feature-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 25px -5px rgba(114, 30, 30, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold gradient-text">PORTFOLIO ERVAN</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html#home" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="index.html#projects" class="text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+
+        <!-- Project Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Smart Energy Monitor</h1>
+            <div class="w-32 h-1 mx-auto custom-gradient mb-6"></div>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                Sistem monitoring lonjakan listrik rumah tangga dengan akses real-time via LCD dan web server
+            </p>
+        </div>
+
+        <!-- Project Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Project Image -->
+            <div class="rounded-xl overflow-hidden shadow-lg">
+                <img src="projek2ervan.jpg" 
+                     alt="Smart Energy Monitor" 
+                     class="w-full h-auto object-cover transition duration-500 hover:scale-105">
+            </div>
+
+            <!-- Project Details -->
+            <div class="space-y-8">
+                <!-- Description -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Deskripsi Proyek</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Smart Energy Monitor adalah sistem cerdas yang dirancang untuk memantau penggunaan listrik 
+                        dan mendeteksi lonjakan daya di rumah tangga. Sistem ini menampilkan data real-time melalui 
+                        layar LCD dan dapat diakses melalui perangkat seluler via web server. Dengan alat ini, 
+                        pengguna dapat memantau konsumsi energi, menerima notifikasi lonjakan listrik, 
+                        dan mengoptimalkan penggunaan listrik untuk menghemat biaya.
+                    </p>
+                </div>
+
+                <!-- Technical Specifications -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Spesifikasi Teknis</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-microchip text-red-500"></i>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Microcontroller</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">ESP32/Arduino - Pengolah Data</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-bolt text-blue-500"></i>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Sensor Arus</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">ACS712/Current Sensor - Deteksi Lonjakan</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-tv text-green-500"></i>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Display</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">LCD 16x2 - Tampilan Real-time</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-wifi text-purple-500"></i>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Konektivitas</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">Wi-Fi Module - Web Server Access</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Fitur Utama</h2>
+                    <div class="space-y-4">
+                        <div class="feature-card bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-chart-line text-white text-xs"></i>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Monitoring Real-time</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">Pemantauan konsumsi listrik secara real-time dengan update data setiap detik</p>
+                        </div>
+                        
+                        <div class="feature-card bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-exclamation-triangle text-white text-xs"></i>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Deteksi Lonjakan</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">Sistem peringatan otomatis saat terjadi lonjakan listrik berbahaya</p>
+                        </div>
+                        
+                        <div class="feature-card bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-mobile-alt text-white text-xs"></i>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Akses Multi-Platform</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">Dapat diakses via LCD lokal dan perangkat mobile melalui web server</p>
+                        </div>
+                        
+                        <div class="feature-card bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-history text-white text-xs"></i>
+                                </div>
+                                <h3 class="font-semibold text-gray-800">Data Historis</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">Penyimpanan data penggunaan untuk analisis pola konsumsi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back Button -->
+                <div class="pt-6">
+                    <a href="index.html#projects" class="btn-back px-8 py-3 rounded-lg font-medium inline-flex items-center">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Back to All Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full footer text-gray-300 mt-16">
+        <div class="max-w-6xl mx-auto px-6 py-8 text-center">
+            <p>© 2025 Ervan Darmawan. All rights reserved.</p>
+            <div class="mt-2 space-x-6">
+                <a href="index.html" class="hover:text-white transition duration-300">Portfolio</a>
+                <a href="index.html#contact" class="hover:text-white transition duration-300">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
